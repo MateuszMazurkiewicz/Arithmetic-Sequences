@@ -60,7 +60,7 @@ namespace Application
                             proceed = int.TryParse(Console.ReadLine(), out selectedNumber);
                             if (!SzemerediGame.GeneratedNumbers.Any(x => x.Value.Value == selectedNumber))
                             {
-                                Console.WriteLine("Choose the number that is not colored yet!");
+                                Console.WriteLine("Choose the number from set that is not colored yet!");
                                 proceed = false;
                             }
                         } while (!proceed);
